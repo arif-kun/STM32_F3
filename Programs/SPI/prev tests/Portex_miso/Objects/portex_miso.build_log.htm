@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Luffy sama, NA, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.33.0.0
+Toolchain Path:  C:\Programs\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\arifs\Documents\Embedded\STM32\Keil_CMSIS\F303\SPI\prev tests\Portex_miso\portex_miso.uvprojx
+Project File Date:  01/18/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Programs\Keil\ARM\ARMCC\Bin'
+Build target 'Target 1'
+assembling startup_stm32f303xc.s...
+compiling main.c...
+main.c(22): warning:  #1295-D: Deprecated declaration SPI1_init - give arg types
+  void SPI1_init();
+main.c(23): warning:  #1295-D: Deprecated declaration SPI2_init - give arg types
+  void SPI2_init();
+main.c(162): warning:  #61-D: integer operation result is out of range
+  	GPIOA->AFR[0] &=~(0xF<<20 | 0xF<<24 | 0xF<<28);
+main.c(179): warning:  #61-D: integer operation result is out of range
+  	GPIOB->MODER &=~(3<<24 | 3<<26 | 3<<28 | 3<<30);
+main.c(180): warning:  #61-D: integer operation result is out of range
+  	GPIOB->MODER |= 1<<24 | 2<<26 | 2<<28 | 2<<30;
+main.c(182): warning:  #61-D: integer operation result is out of range
+  	GPIOB->AFR[1] &=~(0xF<<20 | 0xF<<24 | 0xF<<28);
+main.c: 6 warnings, 0 errors
+compiling system_stm32f3xx.c...
+linking...
+Program Size: Code=1188 RO-data=424 RW-data=4 ZI-data=1636  
+".\Objects\portex_miso.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F3xx_DFP.2.1.0.pack
+                Keil.STM32F3xx_DFP.2.1.0
+                STMicroelectronics STM32F3 Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\arifs\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\arifs\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil.Standalone::Device:Startup:1.0.0
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\arm\startup_stm32f303xc.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\system_stm32f3xx.c
+      Source file:   MDK\Device\Source\ARM\STM32F3xx_OPT.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
